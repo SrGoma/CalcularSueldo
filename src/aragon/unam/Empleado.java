@@ -17,29 +17,30 @@ public class Empleado {
    private String nombreEmpleado;
    private int horas;
    private double tarifa;
+   
 
     public String getNombreEmpleado() {
         return nombreEmpleado;
     }
 
-    public void setNombreEmpleado(String nombreEmpleado) {
-        this.nombreEmpleado = nombreEmpleado;
+    public void setNombreEmpleado(String nombreEmpleados) {
+        nombreEmpleado = nombreEmpleados;
     }
 
     public int getHoras() {
         return horas;
     }
 
-    public void setHoras(int horas) {
-        this.horas = horas;
+    public void setHoras(int hora) {
+        horas = hora;
     }
 
     public double getTarifa() {
         return tarifa;
     }
 
-    public void setTarifa(double tarifa) {
-        this.tarifa = tarifa;
+    public void setTarifa(double tarifas) {
+        tarifa = tarifas;
     }
     
 }

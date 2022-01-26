@@ -35,6 +35,7 @@ public class PruebaCalcularSalario {
         System.out.println("Ingrese el salario por hora: ");
         salarioHora = entrada.nextDouble();
         E1.setTarifa(salarioHora);
+        entrada.nextLine();
         System.out.println("Ingrese el nombre del empleado: ");
         nombre = entrada.nextLine();
         E2.setNombreEmpleado(nombre);
@@ -44,6 +45,7 @@ public class PruebaCalcularSalario {
         System.out.println("Ingrese el salario por hora: ");
         salarioHora = entrada.nextDouble();
         E2.setTarifa(salarioHora);
+        entrada.nextLine();
         System.out.println("Ingrese el nombre del empleado: ");
         nombre = entrada.nextLine();
         E3.setNombreEmpleado(nombre);
@@ -53,23 +55,24 @@ public class PruebaCalcularSalario {
         System.out.println("Ingrese el salario por hora: ");
         salarioHora = entrada.nextDouble();
         E3.setTarifa(salarioHora);
+        entrada.nextLine();
         
         C1.setSalarioEmpleado(E1.getHoras(), E1.getTarifa());
         System.out.printf("Nombre del empleado: %s\n", E1.getNombreEmpleado());
-        System.out.printf("Horas trabajadas: %d\n", E1.getHoras());
-        System.out.printf("Salario por hora: %.2f\n", E1.getTarifa());
-        System.out.printf("Salario total semanal: %.2f\n", C1.getSalarioEmpleado());
+        System.out.printf("Horas trabajadas: %dhrs\n", E1.getHoras());
+        System.out.printf("Salario por hora: $%.2f\n", E1.getTarifa());
+        System.out.printf("Salario total semanal: $%.2f\n", C1.getSalarioEmpleado());
         System.out.println("------------------------------------------------------");
         C1.setSalarioEmpleado(E2.getHoras(), E2.getTarifa());
         System.out.printf("Nombre del empleado: %s\n", E2.getNombreEmpleado());
-        System.out.printf("Horas trabajadas: %d\n", E2.getHoras());
-        System.out.printf("Salario por hora: %.2f\n", E2.getTarifa());
-        System.out.printf("Salario total semanal: %.2f\n", C1.getSalarioEmpleado());
+        System.out.printf("Horas trabajadas: %dhrs\n", E2.getHoras());
+        System.out.printf("Salario por hora: $%.2f\n", E2.getTarifa());
+        System.out.printf("Salario total semanal: $%.2f\n", C1.getSalarioEmpleado());
         System.out.println("------------------------------------------------------");
         C1.setSalarioEmpleado(E3.getHoras(), E3.getTarifa());
         System.out.printf("Nombre del empleado: %s\n", E3.getNombreEmpleado());
-        System.out.printf("Horas trabajadas: %d\n", E3.getHoras());
-        System.out.printf("Salario por hora: %.2f\n", E3.getTarifa());
-        System.out.printf("Salario total semanal: %.2f\n", C1.getSalarioEmpleado());
+        System.out.printf("Horas trabajadas: %dhrs\n", E3.getHoras());
+        System.out.printf("Salario por hora: $%.2f\n", E3.getTarifa());
+        System.out.printf("Salario total semanal: $%.2f\n", C1.getSalarioEmpleado());
     }
 }
