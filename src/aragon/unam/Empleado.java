@@ -41,4 +41,5 @@ public class Empleado {
     public void setTarifa(double tarifa) {
         this.tarifa = tarifa;
     }
+    
 }
