@@ -15,6 +15,8 @@ import java.util.Scanner;
  */
 public class Empleado {
    private String nombreEmpleado;
+   private int horas;
+   private double tarifa;
 
     public String getNombreEmpleado() {
         return nombreEmpleado;
@@ -39,6 +41,4 @@ public class Empleado {
     public void setTarifa(double tarifa) {
         this.tarifa = tarifa;
     }
-   private int horas;
-   private double tarifa;
 }
