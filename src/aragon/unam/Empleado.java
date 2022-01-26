@@ -14,5 +14,31 @@ import java.util.Scanner;
  * @author pc2
  */
 public class Empleado {
-   
+   private String nombreEmpleado;
+
+    public String getNombreEmpleado() {
+        return nombreEmpleado;
+    }
+
+    public void setNombreEmpleado(String nombreEmpleado) {
+        this.nombreEmpleado = nombreEmpleado;
+    }
+
+    public int getHoras() {
+        return horas;
+    }
+
+    public void setHoras(int horas) {
+        this.horas = horas;
+    }
+
+    public double getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(double tarifa) {
+        this.tarifa = tarifa;
+    }
+   private int horas;
+   private double tarifa;
 }
